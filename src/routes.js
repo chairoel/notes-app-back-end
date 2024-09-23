@@ -1,9 +1,11 @@
 /*eslint linebreak-style: ["error", "windows"]*/
+const { addNoteHandler } = require('./handler');
+
 const routes = [
   {
     method: 'POST',
     path: '/notes',
-    handler: () => {},
+    handler: addNoteHandler,
   },
 ];
 
